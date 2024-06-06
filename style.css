@@ -1,0 +1,500 @@
+body {
+    background-color: rgb(122, 151, 255);
+    font-family: 'Poppins', 'Times New Roman';
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(122, 151, 255);
+}
+
+a:hover {
+    color: rgba(96, 118, 199, 1);
+}
+
+label {
+    text-align: left;
+}
+
+input[type=text] {
+    width: 364px;
+    height: 42px;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+input#chat {
+    width: 360px;
+    margin-bottom: 0px;
+    height: 37px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+input[type=text]:focus {
+    outline: 0;
+}
+
+input[type=password] {
+    width: 364px;
+    height: 42px;
+    border-radius: 4px;
+    padding-left: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+input[type=password]:focus {
+    outline: 0;
+}
+
+
+input[type=submit] {
+    border: 0;
+    background-color: rgb(122, 151, 255);
+    color: white;
+    width: 364px;
+    height: 42px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top: 39px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(96, 118, 199, 1);
+}
+
+input[type=file] {
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    height: 189px;
+    width: 189px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input#full-name {
+    margin-bottom: 0px;
+}
+
+input#save-changes {
+    margin-top: 20px;
+}
+
+dialog {
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+    
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(5px);
+}
+
+.addPeopleMain {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    gap: 10px;
+}
+
+.logoTop {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    padding-left: 100px;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconIndex {
+    width: 500px;
+    height: 500px;
+}
+
+.indexContent {
+    margin-top: 200px;
+}
+
+.indexGetStarted {
+    text-align: right;
+}
+
+.indexGetStarted h1 {
+    font-size: 70px;
+    color: white;
+    margin: 0;
+}
+
+.indexGetStarted p {
+    margin: 0 0 50px 0;
+    font-style: italic;
+}
+
+.indexGetStarted button {
+    border: 0;
+    width: 158px;
+    height: 62px;
+    cursor: pointer;
+    color: rgb(122, 151, 255);
+    background-color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.indexGetStarted button:hover {
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.indexAboutUs {
+    font-style: italic;
+}
+
+.indexAboutUs p {
+    margin: 200px 0 0 0;
+}
+
+.indexAboutUs a {
+    color: white;
+    text-decoration: underline;
+}
+
+.indexAboutUs a:hover {
+    font-weight: bold;
+}
+
+.login-box {
+    width: 550px;
+    height: 633px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+}
+
+.login-box-content {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    border: 1px black;
+    padding-top: 50px;
+}
+
+
+.chatlist-box {
+    width: 527px;
+    height: 485px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.profile {
+    margin: 30px 0 0 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.chat-box {
+    width: 465px;
+    height: 691px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.chat-top {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    width: 465px;
+    height: 77px;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.chat-center {
+    width: 465px;
+    height: 537px;
+    background-color: rgb(216, 221, 237);
+    overflow-y: auto;
+}
+
+.speech {
+    font-size: 14px;
+    color: white;
+    background-color: rgb(122, 151, 255);
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-left: 180px;
+    max-width: 200px;
+}
+
+.speechBlack {
+    background-color: rgb(51, 51, 51);
+}
+
+.left.speech {
+    margin-left: 50px;
+}
+
+
+.speech::after {
+    content: " ";
+    border: 20px solid transparent;
+    position: absolute;
+}
+
+.right {
+    text-align: right;
+}
+
+.right.speech::after {
+    border-left-color: rgb(122, 151, 255);
+    border-right: 0;
+    right: -20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.left.speech::after {
+    border-right-color: rgb(51, 51, 51);
+    border-left: 0;
+    left: -20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.chat-bottom {
+    gap: 0;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+}
+
+
+
+.profile-box {
+    background-color: white;
+    width: 1068px;
+    height: 699px;
+    border-radius: 20px;
+}
+
+.profile-box-content {
+    margin: 30px 0 0 30px;
+}
+
+.profile-box-content-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    row-gap: 30px;
+}
+
+.edit-pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-pfp-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 189px;
+    height: 189px;
+    position: absolute;
+    text-align: center;
+    transition: 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.edit-pfp-text:hover {
+    opacity: 0.5;
+    background-color: white;
+}
+
+.aboutus-box {
+    display: flex;
+    width: 900px;
+    height: 620px;
+    background-color: rgb(51, 51, 51);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    flex-direction: row;
+}
+
+.aboutus-box-sidebar {
+    display: flex;
+    flex-flow: column;
+    row-gap: 26px;
+    margin: 15px 0 0 30px;
+    padding-right: 15px;
+}
+
+.aboutus-box-sidebar a {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.aboutus-box-sidebar a:hover {
+    color: rgba(122, 151, 255, 1);
+}
+
+.aboutus-box-content {
+    width: 728px;
+    height: 620px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 12px;
+}
+
+.aboutus-active-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+    flex-flow: column;
+}
+
+.aboutus-inactive-container {
+    display: none;
+}
+
+.about-us-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-box-content {
+    width: 406px;
+    height: 481px;
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 25px;
+    column-gap: 56px;
+}
+
+.peoples-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 175px;
+    height: 228px;
+    background-color: rgb(122, 151, 255);
+    color: white;
+    border-radius: 20px;
+}
+
+.peoples-box img {
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.peoples-box p {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.peoples-box span {
+    font-size: 8px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.peoples-box-contacts {
+    height: 24px;
+    width: 96px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.peoples-box-contacts img {
+    border-radius: 0;
+    height: 24px;
+    width: 24px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.peoples-box-contacts img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 1500px) {
+    .iconIndex {
+        width: 250px;
+        height: 250px;
+    }
+
+    .indexContent {
+        margin-top: 50px;
+    }
+
+    .indexGetStarted h1 {
+        font-size: 55px;
+    }
+
+    .indexGetStarted p {
+        margin-top: 0 0 25px 0;
+    }
+}
